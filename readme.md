@@ -101,7 +101,7 @@ cat /???/????/????.txt
 
 Although the method above may have been the intended way, but why dont try other method
 
-If we recall to we try to access `CouchDB` to browser we have the info that the OS run the database is Ubuntu version 16.04
+If we recall to when we try to access `CouchDB` to browser we have the info that the OS run the database is Ubuntu version 16.04
 
 There is one room in TryHackMe [[5]](https://tryhackme.com/room/overlayfs) explaining about CVE-2021-3493 [[6]](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3493).
 
