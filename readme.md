@@ -44,7 +44,7 @@ Both method will give you respon where you get the version of the `CouchDB` as w
 
 > What is path for list all databases in the web browser of the database management system?
 
-You can get the answer with some googling, *explore the world*
+You can get both answer with some googling, *explore the world*
 
 Once you find out how to do web administrator `CouchDB`, you can find the credential to `SSH` to the machine
 
