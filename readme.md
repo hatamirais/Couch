@@ -1,4 +1,4 @@
-# Couch - TryHackMe Challenge
+# Couch - TryHackMe Challenge Writeup
 
 Hatami Ra'is Bukhari (Althemier)
 [Challenge link](https://tryhackme.com/room/couch)
