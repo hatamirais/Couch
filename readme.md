@@ -56,7 +56,7 @@ Escalate privileges however... its fun
 
 You can do the casual check priv-esc like:
 - `sudo -l`, you get the information that you dont have sudo privileges
-- Eploring SUID with `find / -perm -4000 2>/dev/null` also found nothing
+- Exploring SUID with `find / -perm -4000 2>/dev/null` also found nothing
 - Running `Linpeas` [[3]](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS) aslo found nothing.
 
 So, I found 2 method on how to priv esc ro root
