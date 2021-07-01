@@ -19,7 +19,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 ```
 
-For some reason the scan only show 1 port, even with tag `-A`, so lets try the other method which is `Rustscan`[1](https://github.com/RustScan/RustScan)
+For some reason the scan only show 1 port, even with tag `-A`, so lets try the other method which is `Rustscan`[[1]](https://github.com/RustScan/RustScan)
 
 ```bash
 Open 10.10.75.191:22
@@ -28,7 +28,7 @@ Open 10.10.75.191:5984
 
 Much better. `22` is SSH, then what is `5984`? Quick googling, it's for `CouchDB`.
 
-Access `CouchDB` with typing this into your browser: [2](https://cloud.ibm.com/docs/Cloudant?topic=Cloudant-access-couchdb-cluster)
+Access `CouchDB` with typing this into your browser: [[2]](https://cloud.ibm.com/docs/Cloudant?topic=Cloudant-access-couchdb-cluster)
 ```
 http://10.10.172.141:5984
 ```
@@ -57,7 +57,7 @@ Escalate privileges however... its fun
 You can do the casual check priv-esc like:
 - `sudo -l`, you get the information that you dont have sudo privileges
 - Eploring SUID with `find / -perm -4000 2>/dev/null` also found nothing
-- Running `Linpeas` [3](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS) aslo found nothing.
+- Running `Linpeas` [[3]](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS) aslo found nothing.
 
 So, I found 2 method on how to priv esc ro root
 
@@ -89,7 +89,7 @@ docker -H 127.0.0.1:2375 run --rm -it --privileged --net=host -v /:/mnt alpine
 
 Huh, we can access this container
 
-Lets see what we have here, maybe we can find this `root.txt` with `find` [4](https://tryhackme.com/room/thefindcommand)
+Lets see what we have here, maybe we can find this `root.txt` with `find` [[4]](https://tryhackme.com/room/thefindcommand)
 ```bash
 find / -type f -name root.txt
 #Find any file start from root directory where the name is root.txt
@@ -103,9 +103,9 @@ Although the method above may have been the intended way, but why dont try other
 
 If we recall to we try to access `CouchDB` to browser we have the infor that the OS run the database is Ubuntu version 16.04
 
-There is one room in TryHackMe [5](https://tryhackme.com/room/overlayfs) about CVE-2021-3493 [6](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3493).
+There is one room in TryHackMe [[5]](https://tryhackme.com/room/overlayfs) about CVE-2021-3493 [[6]](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3493).
 
 TLDR, on some version of Ubuntu which one we use is also effected has vulnerable in OverlayFS which allow local users to get root access. The user only need to compile some scripts and run it to gain instant root, pretty cool right?
 
-You can pause what you currently doing and complete Overlayfs room [5](https://tryhackme.com/room/overlayfs) or read and apply what `Overlayfs` has to offer, once finish with `Couch` you can complete `Overlayfs`
+You can pause what you currently doing and complete Overlayfs room [[5]](https://tryhackme.com/room/overlayfs) or read and apply what `Overlayfs` has to offer, once finish with `Couch` you can complete `Overlayfs`
 
