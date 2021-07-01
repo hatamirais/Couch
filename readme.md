@@ -105,7 +105,7 @@ If we recall to we try to access `CouchDB` to browser we have the info that the 
 
 There is one room in TryHackMe [[5]](https://tryhackme.com/room/overlayfs) explaining about CVE-2021-3493 [[6]](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3493).
 
-TLDR, on some version of Ubuntu which one we use is also effected has vulnerable in OverlayFS which allow local users to get root access. The user only need to compile some scripts and run it to gain instant root, pretty cool right?
+TLDR, on some version of Ubuntu which the one we have right now has vulnerability on OverlayFS which allow local users to get root access. The user only need to compile a scripts and run it to gain instant root, pretty cool right?
 
 You can pause what you currently doing and complete Overlayfs room [[5]](https://tryhackme.com/room/overlayfs) or read and apply what `Overlayfs` has to offer, once finish with `Couch` you can complete `Overlayfs`
 
