@@ -101,9 +101,9 @@ cat /???/????/????.txt
 
 Although the method above may have been the intended way, but why dont try other method
 
-If we recall to we try to access `CouchDB` to browser we have the infor that the OS run the database is Ubuntu version 16.04
+If we recall to we try to access `CouchDB` to browser we have the info that the OS run the database is Ubuntu version 16.04
 
-There is one room in TryHackMe [[5]](https://tryhackme.com/room/overlayfs) about CVE-2021-3493 [[6]](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3493).
+There is one room in TryHackMe [[5]](https://tryhackme.com/room/overlayfs) explaining about CVE-2021-3493 [[6]](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3493).
 
 TLDR, on some version of Ubuntu which one we use is also effected has vulnerable in OverlayFS which allow local users to get root access. The user only need to compile some scripts and run it to gain instant root, pretty cool right?
 
